@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { auth, firestore, storage } from "./firebase"
+import { auth, firestore, storage } from "./firebase" // import firebase config file 
 
 export const signup = async (email, pwd) => auth.createUserWithEmailAndPassword(email.trim(), pwd.trim())
 export const login = async (email, pwd) => auth.signInWithEmailAndPassword(email.trim(), pwd.trim())
